@@ -1,0 +1,16 @@
+{
+  "name": "get-started-with-apib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Suwijak Chaipipat <ppnk2537@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "drakov -f *.apib --watch --autoOptions --header Authorization --public -p 3001",
+    "docs": "aglio -i message.apib --theme-template triple -t onlicar -s"
+  },
+  "devDependencies": {
+    "aglio": "^2.3.0",
+    "aglio-theme-onlicar": "^1.6.4",
+    "drakov": "^2.0.1"
+  }
+}

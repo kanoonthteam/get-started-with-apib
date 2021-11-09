@@ -1,0 +1,70 @@
+# BEATS
+
+This is BEATS API documentation
+
+## Message Collection [/messages{?limit}{?query}]
+
+Endpoint description
+
+### Reteieve Message [GET]
+
+Method description
+
++ Parameters
+
+  + limit (number, optional)
+  + query (string, optional)
+
++ Response 200 (text/plain)
+
+        Hello Aun!
+
+### Create Message [POST]
+
+Method description
+
++ Request Successfully Called (application/json)
+
+    + Body
+
+        {
+            "id": "yes"
+        }
+
+    + Schema
+
+        {
+            "type": "object",
+            "properties": {
+                "id": { "type": "string", "pattern": "yes" }
+            }
+        }
+
++ Response 200 (text/plain)
+
+        Hello Aun!
+
++ Request Failed (application/json)
+
+    + Body
+
+        {
+            "id": "no"
+        }
+
+    + Schema
+
+        {
+            "type": "object",
+            "properties": {
+                "id": { "type": "string", "pattern": "no" }
+            }
+        }
+
++ Response 500 (text/plain)
+
+    + Body
+
+        {
+            "error": "internal_server_error"
+        }
